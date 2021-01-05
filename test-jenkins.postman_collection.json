@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "e659247a-b085-4a7e-9d95-197b0407985f",
+		"name": "test-jenkins",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "公众号-获取列表",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"返回100001\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(100001);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVVRIX0pXVF9JRCIsImlhdCI6MTYwOTcyMjI4NSwiaXNzIjoiZmF3LWF1dGgiLCJzdWIiOiJ7XCJsb2dpbk5hbWVcIjpcImRhc2VuLmxpbi1udHRcIixcInVzZXJOYW1lXCI6XCLlpKfmo64g5p6XXCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlQ29kZVwiOlwic3lzdGVtX3JvbGVcIixcImVtYWlsXCI6XCJkYXNlbi5saW5AbnR0ZGF0YS5jb20uY25cIixcImlkXCI6NDcsXCJyZWZyZXNoVG9rZW5cIjpcImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSWdPaUFpU2xkVUlpd2lhMmxrSWlBNklDSmxPREZsTUdZd1l5MDVOR00wTFRRME1UTXRZakExWWkxalpqVXlOekZsTXpFeU1XRWlmUS5leUpxZEdraU9pSTROMk0yWWpjeU9DMHhNREppTFRRMFpUZ3RZalptWmkxbE5EVmtNRFpsWldaaU9HWWlMQ0psZUhBaU9qRTJNRGszTXpZMk56Y3NJbTVpWmlJNk1Dd2lhV0YwSWpveE5qQTVOekl5TWpjM0xDSnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VabUYzTG1OdUwyRjFkR2d2Y21WaGJHMXpMMjl3Wlc1aGNHa2lMQ0poZFdRaU9pSm9kSFJ3Y3pvdkwyRjFkR2d1Wm1GM0xtTnVMMkYxZEdndmNtVmhiRzF6TDI5d1pXNWhjR2tpTENKemRXSWlPaUkyTkdVNE1tVXdNQzFpWWpjM0xUUXdNV1l0T0RabFpTMDJNakU0TkRoaE5XRXpOVEFpTENKMGVYQWlPaUpTWldaeVpYTm9JaXdpWVhwd0lqb2labUYzTFc5d1pXNHRNbUl3TWpVME5EWXRaVGRtT1MwMFlqRTNMV0ZtTVRBdFpEbGhOamhsWVRaak5URXpJaXdpWVhWMGFGOTBhVzFsSWpvd0xDSnpaWE56YVc5dVgzTjBZWFJsSWpvaU1tVTFNR1V4WTJNdE9XUmxOaTAwTXpSbExXRTFaVE10WmprMk9XVXlaREZsTWpJM0lpd2ljbVZoYkcxZllXTmpaWE56SWpwN0luSnZiR1Z6SWpwYkltOW1abXhwYm1WZllXTmpaWE56SWl3aWRXMWhYMkYxZEdodmNtbDZZWFJwYjI0aVhYMHNJbkpsYzI5MWNtTmxYMkZqWTJWemN5STZleUpoWTJOdmRXNTBJanA3SW5KdmJHVnpJanBiSW0xaGJtRm5aUzFoWTJOdmRXNTBJaXdpYldGdVlXZGxMV0ZqWTI5MWJuUXRiR2x1YTNNaUxDSjJhV1YzTFhCeWIyWnBiR1VpWFgxOUxDSnpZMjl3WlNJNkltVnRZV2xzSUhWaGRDMXdjbTlrZFdOMElIUnZZeTFqYjNKbElFRlFTVjlUUTA5UVJTQndjbTltYVd4bEluMC52SWxMSHlqc0RLZXhuWXkyci0tUkRITFVaaWJhMW1DWFFHWkF4dmUxS3hRXCIsXCJtZW51TGlzdFwiOm51bGx9IiwiZXhwIjoxNjA5ODA4Njg1fQ.ppcxLyxMgwj8W6N8RzFF_PelwWc9oUdijl-R4yUDH4M",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://gzh-manage-uat.faw.cn/api/model/modelMessageUserList/?appId=wx7d5f2b43e4221acd&templateId=O4YBfIbVZQlMOQjuQ6RRgClPa7OMnc4m2lPjkSuALBk&startTime=2020-12-16 00:16:00&endTime=2020-12-16 19:16:00&title=订阅模板消息&mobile=18643127426&status=2&nickName=infor&pageNo=1&pageSize=10",
+					"protocol": "https",
+					"host": [
+						"gzh-manage-uat",
+						"faw",
+						"cn"
+					],
+					"path": [
+						"api",
+						"model",
+						"modelMessageUserList",
+						""
+					],
+					"query": [
+						{
+							"key": "appId",
+							"value": "wx7d5f2b43e4221acd"
+						},
+						{
+							"key": "templateId",
+							"value": "O4YBfIbVZQlMOQjuQ6RRgClPa7OMnc4m2lPjkSuALBk"
+						},
+						{
+							"key": "startTime",
+							"value": "2020-12-16 00:16:00"
+						},
+						{
+							"key": "endTime",
+							"value": "2020-12-16 19:16:00"
+						},
+						{
+							"key": "title",
+							"value": "订阅模板消息"
+						},
+						{
+							"key": "mobile",
+							"value": "18643127426"
+						},
+						{
+							"key": "status",
+							"value": "2"
+						},
+						{
+							"key": "nickName",
+							"value": "infor"
+						},
+						{
+							"key": "pageNo",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
